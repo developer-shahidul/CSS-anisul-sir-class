@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+      <title> inline/ block element max-weight/ width</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="display-device-width"  initialscale="1.0">
+
+ 
+        <style>                                                        /* pseudo tag class 
+                                                                         
+                                                                      active/checked/disabled/emty/enable/first-child
+                                                                      first-of-tipe/ focus/hover/in-range/invalid/lang/
+        
+                                                                            last-child/last-of-tipe */
+       input:focus{ background-color:aqua;
+                      padding: 10px;
+                     border-radius:30px;
+                      margin-left: 30px;
+                      margin-bottom: 30px;
+                    }
+        
+                      
+              .ex::first-letter{ color: rgb(255, 0, 212);}
+              .ex::selection{ color: rgb(255, 0, 212);
+                               background-color: blueviolet;}
+
+                .ex::after{ content:"@";              /*pseudo element :: bebohar hoi
+                                                        after/ before*/
+                         }
+
+                     
+                    
+            table,tr,td{ border: 1px solid blue;
+                 border-collapse: collapse;
+                         }
+
+            tr:nth-child(odd) {
+              background-color:brown
+            
+                                } 
+          a:hover{ background-color: blue;
+                    color: blanchedalmond;}
+
+
+ /* (n) (n+1) (2n+1) enen after ittadi element  */
+
+
+/* 2 dara bag hoi na amon sonkha (odd) bole bejur sonkha
+                          
+                                                 (  even )holo jur shonkha */
+
+          .myclass h1:nth-child(even){ background-color: red;
+                                 color: #000;
+                                  
+                              }
+                 
+    
+      
+
+        </style>
+
+</head>
+
+
+
+
+
+  <body> 
+ 
+    <input type="text" placeholder="Inter first name" id="name">
+
+
+
+ 
+  
+
+
+
+
+
+    <a  id="mydiv" href="">tuturial</a>
+     <a href="http://www.youtube.com" target="_blank"> Home</a>
+
+
+
+
+       <p class="ex">
+
+               You can use the ::first-line pseudo-element to add a special effect to the first line of a text. 
+               Some more text. And
+               even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more
+               , and more.
+      </p>
+     <table>
+          <tr>
+          <td>name</td>
+           <td>age</td>
+          </tr>
+          <tr>
+               <td>shohidul</td>
+                 <td>23</td>
+           </tr>
+            <tr>
+                <td>shohidul</td>
+                 <td>23</td>
+          
+             </tr>
+      </table>
+                
+
+        <div id= "my" class="myclass">
+
+        <h1> first child pseudo </h1>
+         <h1> first child pseudo </h1>
+          <h1> first child pseudo </h1>
+          <h1> first child pseudo </h1>
+         <h1> first child pseudo </h1>
+
+        </div>
+ </body>
+</html>
