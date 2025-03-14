@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+         <title> z-index and variable color </title>
+ 
+  <style>
+         @media screen and (max-width: 800x) {
+            :root{ --variable-color: rgb(70, 15, 199);
+                    --variable-color2: green;  
+            
+              }  }
+
+           /* screen max 800px hole color change hobe */
+                                
+
+                                          /*variable color use sob jagai use kora jai  
+                                                        judi variable kaj na kore aer jonno red color use hoice*/
+       
+        #div1{
+        background-color: var(--variable-color, red);              
+         background-color: red;
+             position: absolute;                                      
+             height: 200px;
+             width: 200px;
+             top: 100px;
+              left: 100px;
+              z-index: 3;       
+             }                        
+                                   
+                                               /* z-index is used to bashoman abong niche rakharjonno ,  atar 2 ta value ace
+                                                   negative value and positive value, -2,-4  +1 +4 etc. */
+  .div2{     background-color: var(--variable-color, rgba(9, 9, 243, 0.712));    
+            background-color: rgba(9, 9, 243, 0.712);
+            position: absolute; 
+            height: 200px;
+            width: 200px;
+        
+
+      }
+
+
+
+
+  </style>
+
+
+</head>
+<body>
+
+<div id="div1"></div>
+
+
+
+
+<div class="div2"></div>
+
+
+
+
+
+
+</body>
+</html>

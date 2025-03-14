@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <title> overflow and custom tooltip</title>
+      <style>
+             .overflow{ border: 2px solid blue;
+                        width: 300px;
+                        height: 200px;       
+                        overflow: scroll;
+
+                       }
+
+                                                       /* overflow value scrolls; visible; auto; hidden;   */
+
+             .tooltip{ position: relative;
+              
+                     }  
+                          
+
+
+
+
+     .tooltip:hover .tooltip-text{ visibility: visible;
+                                  }
+
+ 
+                        
+
+
+          .tooltip-text{   width: 150px;
+                           visibility: hidden; 
+                           
+                          background-color: indigo;
+                          color: white;
+                          border-radius: 10px;
+                          position: absolute;
+                          top: 30px;
+                          left: 30px;
+                          padding: 10px;
+                          
+                         }   
+                           
+                          
+                           
+                            
+                         
+
+                          
+
+
+     </style>
+</head>
+<body>
+<div class="overflow">
+    <p> 
+          A 300-word essay is a short piece. It might be assigned by a school teacher to test the student knowledge of the topic
+          and their ability to formulate thoughts concisely. The most common genres for texts of 300 to 350 words are a discussion
+          board post and a personal statement for a college application.
+          A 300-word essay is a short piece. It might be assigned by a school teacher to test the student knowledge of the topic
+          and their ability to formulate thoughts concisely. The most common genres for texts of 300 to 350 words are a discussion
+          board post and a personal statement for a college application.
+     </p>
+
+</div>
+<div class="tooltip">
+      <a href="" target="_blank">Facebook
+        <span class="tooltip-text"> facebook is social media</span></a>
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
