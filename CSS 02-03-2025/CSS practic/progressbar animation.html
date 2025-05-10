@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animaton progress bar</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .progress {
+        background-color: chartreuse;
+        padding: 10px;
+        width: 600px;
+        text-transform: uppercase;
+      }
+      .progress li {
+        margin: 40px auto;
+        font-size: 30px;
+        list-style-type: none;
+        font-weight: bolder;
+        position: relative;
+        color: crimson;
+      }
+      .progress li::before {
+        content: "";
+        position: absolute;
+        top: calc(100% + 5px);
+
+        background-color: aliceblue;
+        width: 100%;
+        height: 25px;
+        left: 0;
+        border-radius: 100px;
+      }
+      .progress li::after {
+        content: "";
+        position: absolute;
+        top: calc(100% + 5px);
+        width: 0%;
+        height: 25px;
+        left: 0;
+        border-radius: 100px;
+        background-color: aliceblue;
+
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+      }
+
+      .progress li.java::after {
+        animation-name: progressbar;
+      }
+      @keyframes progressbar {
+        to {
+          background-color: rgb(11, 11, 199);
+          width: 90%;
+        }
+      }
+
+      .progress li.paython::after {
+        animation-name: progress;
+      }
+      @keyframes progress {
+        to {
+          background-color: rgb(252, 7, 7);
+          width: 90%;
+        }
+      }
+
+      .progress li.css::after {
+        animation-name: progressba;
+      }
+      @keyframes progressba {
+        to {
+          background-color: rgb(226, 9, 75);
+          width: 70%;
+        }
+      }
+
+      .progress li.boostap::after {
+        animation-name: rogressbar;
+      }
+      @keyframes rogressbar {
+        to {
+          background-color: rgb(10, 24, 15);
+          width: 30%;
+        }
+      }
+
+      .progress li.mongodv::after {
+        animation-name: progressbr;
+      }
+      @keyframes progressbr {
+        to {
+          background-color: rgb(172, 25, 81);
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul class="progress">
+        <li class="java">java</li>
+        <li class="paython">paython</li>
+        <li class="css">css</li>
+        <li class="boostap">boostap</li>
+        <li class="mongodv">mongodv</li>
+      </ul>
+    </div>
+  </body>
+</html>

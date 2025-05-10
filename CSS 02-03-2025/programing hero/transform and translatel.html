@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform and translate</title>
+    <style>
+      .container,
+      .inner {
+        background-color: blueviolet;
+
+        width: 300px;
+        height: 300px;
+      }
+      .container {
+        border: 1px solid;
+        margin: 0 auto;
+      }
+      .inner {
+        border: 2px solid lawngreen;
+        background-color: peachpuff;
+
+        /* transform: scale(.25, .50); akhane .25 holo 100% aer 25%*/
+        /*  transform: rotate(45deg);*/
+        /*   transform: rotate(-45deg) scale(.50) translateX(100px) translateY(100px);*/
+      }
+      .inner:hover {
+        transform: rotate(-45deg) scale(0.5) translateX(100px) translateY(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>transform and translate</h1>
+    <div class="container">
+      container 1
+      <div class="inner">inner 1</div>
+    </div>
+    <div class="container">
+      container 2
+      <div class="inner">inner 1</div>
+    </div>
+    <div class="container">
+      container 3
+      <div class="inner">inner 1</div>
+    </div>
+  </body>
+</html>

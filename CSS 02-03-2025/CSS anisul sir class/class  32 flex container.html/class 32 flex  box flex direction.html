@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+     :root{ --background-color1: rgb(131, 9, 245);
+              --backgroud-color: rgb(9, 13, 218);
+            }
+            .flex-container{ display: flex;
+                             height: 500px;
+                             width: 700px;
+                             background-color: var(--backgroud-color);
+                             flex-direction: row-reverse;
+                             font-size: 40px;
+                            } 
+
+                             
+   /* flex-directin value row ,column, row-reverse, column-reverse */
+
+            
+   .flex-container > div{ height: 100px;
+                          width: 100px;
+                          background-color:var(--background-color1);
+                          margin: 20px auto;
+                          
+                        }
+                          
+                        .flex-container2 { display: flex;
+                             margin: 10px auto;
+                             height: 400px;
+                             width: 500px;
+                             background-color: var(--backgroud-color);
+                             flex-wrap: wrap-reverse;
+                             font-size: 40px;
+                             padding: 20px;
+                             text-align: center;
+                            }
+                              /* flex-wrap value wrap, nowrap, wrap-reverse */
+
+  .flex-container2 > div { height: 100px;
+                width: 100px;
+                background-color:var(--background-color1);
+                background-color:rgb(250, 16, 16); 
+                padding: 10px;
+                margin: 20px ;
+                  }        
+                           
+             
+       
+             
+
+               
+
+
+
+     </style>
+
+
+
+</head>
+<body>
+    <div class="flex-container">
+          <div>
+                  1
+          </div>
+          <div>
+            2
+          </div>
+          <div>
+              3
+          </div>
+          <div>
+              4
+          </div>
+          <div>
+              5
+          </div>
+          <div>
+             6
+          </div>
+
+
+
+
+
+
+    </div>
+    <div class="flex-container2">
+         
+        <div>
+                1
+        </div>
+        <div>
+          2
+        </div>
+        <div>
+            3
+        </div> 
+        <div>
+            4
+        </div>
+        <div>
+            5
+        </div>
+        <div>
+           6
+        </div>
+  </div>
+    
+</body>
+</html>

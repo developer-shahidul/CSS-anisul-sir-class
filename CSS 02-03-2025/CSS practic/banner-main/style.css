@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+.container {
+  max-width: 1200px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+/* Navbar css */
+#nav {
+  background: #ffc675;
+  padding: 20px 0;
+}
+#nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav .container .logo img {
+  width: 123px;
+  height: 30px;
+}
+#nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+#nav .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+#nav .menu ul li {
+  list-style-type: none;
+}
+#nav .menu ul li a {
+  text-decoration: none;
+
+  font-weight: 400;
+  position: relative;
+
+  color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+}
+#nav .menu ul li a:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #00554f;
+  transition: all 0.3s;
+}
+
+#nav .menu ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: -3px;
+  background: #00554f;
+}
+#nav .menu ul li:hover a::before {
+  transition: all 0.3s;
+  width: 100%;
+}
+#nav .appoinment {
+  border: 1px solid #00554f;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 174px;
+  height: 56px;
+  background: #00554f;
+  color: #fff;
+}
+#nav .appoinment:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #00554f;
+  transition: all 0.3s;
+}
+#three-line-menu {
+  display: none;
+}
+/* Banner css  */
+#banner {
+  padding: 50px 0;
+  background: #00554f;
+}
+#banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#banner .container .bannerContent {
+  flex: 3;
+}
+#banner .container p {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+#banner .container h2 {
+  font-size: 54px;
+  color: white;
+  font-weight: 500;
+  margin: 20px 0;
+}
+#banner .container .bannerImage {
+  flex: 1.5;
+}
+#banner .container .bannerImage img {
+  width: 100%;
+}
+
+.bannerBtn {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.bannerBtn button {
+  border: 1px solid #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 133px;
+  height: 56px;
+  background: transparent;
+  color: #fff;
+}
+
+.bannerBtn button.about {
+  background: #fff;
+  color: #00554f;
+}
+
+.bannerBtn button.about:hover {
+  background: transparent;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.bannerBtn button.services:hover {
+  transition: all 0.3s;
+  background: #fff;
+  color: #00554f;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav .menu {
+    display: none;
+  }
+
+  #three-line-menu {
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+
+  #banner .container {
+    flex-direction: column;
+  }
+}

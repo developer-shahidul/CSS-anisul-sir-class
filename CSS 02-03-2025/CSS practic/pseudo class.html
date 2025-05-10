@@ -1,0 +1,54 @@
+<!doctype>
+<html lang="en">
+<head>
+       <meta cherset="UTF-8">
+       <title> pseudo class or element</title>
+      <style>
+
+          .c1::placeholder {
+                          color: blue;                   /* Placeholder-er text color blue */
+                         }
+          .c1:hover::placeholder {
+                                   color: red;              /* Hover korle placeholder-er text color red hobe */
+                                  }              
+          .c1:hover {
+                     border: 2px solid green;           /* Hover korle input field-er border green hobe */
+                     background-color: #f0fff0;         /* Hover korle background halka greenish hobe */
+                     }
+          
+
+
+          #c2::placeholder         {
+                                   color: rgb(147, 23, 196);              /* Hover korle placeholder-er text color red hobe */
+                                  }
+
+         #c2:hover::placeholder   {
+                                   color: red;                  /* Hover korle placeholder-er text color red hobe */
+                                  }
+          #c2:hover {
+                     border: 2px solid green;                      /* Hover korle input field-er border green hobe */
+                     background-color: #e023c7;                          /* Hover korle background halka greenish hobe */
+                     }
+               
+
+
+      
+              #c2,.c1{
+                 outline: none;
+                  border: 1px solid gray;
+                  padding: 8px;
+                  width: 300px;
+              }
+        
+         </style>
+</head>
+ <body>
+ <input type="text" placeholder=" full name" class="c1" name="name">
+ <input type="passwoard" placeholder="passwoard" id="c2" name="password">
+
+
+
+
+
+</body>
+</html>

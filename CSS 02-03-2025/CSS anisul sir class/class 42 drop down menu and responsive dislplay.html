@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .nav {
+        background-color: darkred;
+        text-align: center;
+        font-size: 2rem;
+      }
+      .nav a {
+        color: aliceblue;
+        padding: 10px;
+        text-decoration: none;
+        cursor: cell;
+      }
+      .container {
+        display: inline;
+        position: relative;
+        max-width: 992px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container:hover .content {
+        display: block;
+        background-color: darkred;
+        max-width: 140px;
+      }
+      .content {
+        position: absolute;
+        top: 30px;
+        right: 0px;
+        min-width: 100px;
+        display: none;
+        text-align: left;
+      }
+      .content a {
+        display: inline-block;
+      }
+      #fb:hover {
+        background-color: rgb(226, 17, 17);
+        display: inline-block;
+      }
+      .em:hover {
+        background-color: blue;
+        display: inline-block;
+      }
+      .em {
+        width: 100%;
+      }
+      @media screen and (max-width: 600px) {
+        .nav {
+          display: flex;
+          flex-direction: column;
+          background-color: blue;
+        }
+        .nav a {
+          background-color: aquamarine;
+          margin: 10px;
+          text-align: center;
+          border-radius: 10px;
+        }
+        .container {
+          width: 100%;
+          margin: 10px;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href=""> home</a>
+      <a href=""> work</a>
+      <div class="container">
+        <a href="">contact</a>
+        <div class="content">
+          <a href="" id="fb">facebook</a>
+          <a href="" class="em"> email</a>
+        </div>
+      </div>
+
+      <a href="">address</a>
+    </div>
+  </body>
+</html>

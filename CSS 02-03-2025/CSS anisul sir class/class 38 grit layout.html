@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <title> grid area </title>
+    <style>
+
+            *{padding: 0px;
+              margin: 0px;
+       
+              box-sizing: border-box;}
+
+             .item1{grid-area: header;}
+             .item2{grid-area: menu;}
+             .item3{ grid-area: main;} 
+             .item4{grid-area: aside;}
+             .item5{grid-area: footer;}
+
+
+             
+     .grid-container{ margin: 20px;
+                    /* grid-template-columns: auto auto auto auto auto auto; */
+
+                     display: grid;
+                     grid-template-areas:
+
+
+                     'header header header header header header'
+                     'menu main main main aside aside'
+                     'menu footer footer footer footer footer' ;
+                    
+                       }
+                    
+                   
+                  
+                 
+       .grid-container > div{  border: 1px solid brown;
+                              text-align: center;
+                              background-color: aquamarine;
+                              font-size: 1.5rem;
+                              padding: 10px;
+                             }
+                    
+       
+                     
+                     
+
+                   
+           
+            /*
+             .header { grid-column: 1 / 7; }
+             .menu{ grid-column: 1 / 2;
+                    grid-row: 2 / 4;
+                   } */
+            
+              /*
+             .main{ grid-column: 2 / 5;}
+             .aside{ grid-column: 5 / 7;}
+             .footer{ grid-column: 2 / 7;}
+
+              */        
+                     
+            
+             
+  
+
+                  
+            
+     
+
+
+    </style>
+</head>
+<body>
+     <div class="grid-container">
+            <div class="item1">    Header     </div>
+           
+            <div class="item2">    Menu       </div>
+            <div class="item3">    Main       </div>
+            <div  class="item4">   Aside      </div>
+            <div class="item5">    niche   </div>
+            
+ 
+     </div>
+    
+</body>
+</html>

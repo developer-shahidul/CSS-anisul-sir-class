@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header,
+      .nav,
+      .side-bar,
+      .main,
+      .advertising,
+      .footer {
+        background-color: aquamarine;
+        color: blue;
+        border: 2px solid;
+        padding: 10px;
+      }
+      .container {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+          "h h h h"
+          "n m m s"
+          "n m m a"
+          "f f f f";
+      }
+      header {
+        grid-area: h;
+      }
+
+      .nav {
+        grid-area: n;
+      }
+      .side-bar {
+        grid-area: s;
+       
+      }
+      .main {
+        grid-area: m;
+      }
+      .advertising {
+        grid-area: a;
+       
+      }
+      .footer {
+        grid-area: f;
+      }
+      aside {
+        gap: 20px;
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          display: grid;
+          gap: 20px;
+          grid-template-areas:
+            "h "
+            "n"
+            "m"
+            "s"
+            "a"
+            "f";
+        }
+      }
+      @media screen and (min-width: 576px) and (max-width: 992px) {
+        .container {
+          display: grid;
+          gap: 20px;
+          grid-template-areas:
+            "h h h  "
+            "n n n "
+            "s m m "
+            "a f f ";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <h3>the header</h3>
+        </div>
+      </header>
+
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href=""> nav-1</a>
+          </li>
+          <li>
+            <a href="">nav-3</a>
+          </li>
+          <li>
+            <a href="">nav-2</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <article>
+          <h3>main article area</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            dignissimos vel veniam? Soluta sit maiores libero necessitatibus,
+            fugit praesentium voluptatem?
+          </p>
+        </article>
+      </main>
+
+      <div class="side-bar">side-bar</div>
+      <div class="advertising">advertising</div>
+
+      <footer class="footer">
+        <h3>the footer</h3>
+      </footer>
+    </div>
+  </body>
+</html>

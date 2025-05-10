@@ -1,0 +1,54 @@
+<!doctype html>
+<html lamg="en">
+<head>
+     <title> selector and combination</title>
+     <meta charset="UTF-8">
+       <style>
+             *{ background-color: yellow;
+                font-style:italic;
+              }
+           div h2{ font-size: 50px;  
+                   color: aqua;
+                  }                             
+            div > h2{color: green;
+                   font-size:45px;      
+                   } 
+            div + h2{ color: blue;
+                   font-size:60px;
+                   }              
+            div ~ p{ color: red;
+                     background-color: green;
+                     font-size: 45px;
+                     }
+
+      </style>
+      <!-- sob color select kore kaj korbe decendant--> 
+      <!-- sodu div a thaka child select kore kaj kore-->
+</head>
+<body>
+      <div>
+      <h2> Asterisk symbol * <-- univesal selector  sobaike select korbe color dile sobai color hobe<h2>
+      <h2> descendant selector aer maddome sudu div aer modde je tag ace oi gulu select hobe </h2>
+     
+      <span><h2> child selector div + > + tag/ p </h2> </span>
+     </div>  
+  <h2>Next sibiling combinator (div + p)  div aer porer ta select kore kaj kore</h2>
+
+
+
+
+     <div>
+      <p> Asterisk symbol * <-- univesal selector  sobaike select korbe color dile sobai color hobe<p>
+      <p> descendant selector aer maddome sudu div aer modde je tag ace oi gulu select hobe </p>
+     
+      <span><p> child selector div + > + tag/ p </p> </span>
+     </div>  
+
+     <p> Subsequent-sibling combinator (~)   div aer bahirer sob golo p tag select kore kaj kore </p>
+      <p>Next sibiling combinator (div + p)  div aer porer ta select kore kaj kore</p>
+
+</body>
+</html>
+
+
+

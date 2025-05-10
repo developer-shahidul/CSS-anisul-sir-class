@@ -1,0 +1,84 @@
+.main {
+  background-color: chartreuse;
+  color: crimson;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  /*
+  transition-duration: 2s;
+  transition-property: width;
+  transition-delay: 2s;
+  transition-timing-function: ease-in-out; */
+  transition-timing-function: ease-in-out;
+  /* transition delay suro hobe 2 secend por */
+  transition: width 2s, height 3s ease-in-out 1s;
+}
+.main:hover {
+  width: 400px;
+  height: 500px;
+}
+h1 {
+  text-align: center;
+  transition: font-size 2s;
+}
+h1:hover {
+  font-size: 3rem;
+}
+/*around animation 
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.box {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  animation: moveText 20s infinite linear;
+  animation-name: moveText;
+  color: red;
+}
+
+@keyframes moveText {
+  0% {
+    top: 0px;
+    bottom: 100px;
+  }
+  25% {
+    bottom: 0px;
+    right: 300px;
+  }
+  50% {
+    right: 0px;
+    top: 900px;
+  }
+  75% {
+    bottom: 0.5px;
+    left: 300px;
+  }
+  100% {
+    left: 0px;
+    top: 200px;
+  }
+}
+
+
+animation profarty
+
+
+@keyframes
+animation-duration
+animation-name
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation
+
+*/

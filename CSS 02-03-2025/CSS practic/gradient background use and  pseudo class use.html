@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+         <title> pseudo class and gradient use </title>
+        <style>
+             #passwoard { 
+                      font-size: 40px;
+                      padding: 10px;
+                      margin: 20px;
+                      border-radius: 10px;
+                      border: 2px solid blue;
+                      
+                    
+                    
+                      } 
+ #passwoard::placeholder{ text-align: center;
+                       
+                          
+
+                         color: aqua;
+                        }   
+ #passwoard:hover::placeholder{ 
+                       
+                          
+
+                       color: rgb(224, 42, 73);
+                      }   
+
+
+ #passwoard:hover{
+                   background: slateblue;   
+                   color: blue;
+                 } 
+                                      
+#neme { font-size:40px;
+        padding: 10px;
+        margin: 40 20 20 20;
+        border-radius: 10px ;
+        border: 2px solid greenyellow;
+
+}
+
+#neme:hover::placeholder{color: rgb(240, 114, 11);
+      } 
+
+
+#neme::placeholder{color: blueviolet;
+                    text-align: center;}
+#neme:hover{
+            background-color: rgb(27, 223, 85);
+           }         
+
+
+#style{  border: 1px solid blue;
+         width: 100%;
+         height: 500px;
+         margin: 00 00 00 00 ;
+         display: inline-block;
+         text-align: center;
+        
+        
+         background: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255))
+        }
+
+.mydiv1{ border: 2px solid  blueviolet;
+            width: 100%;
+            height: 500px;
+            background: radial-gradient(circle, rgb(240, 6, 6), rgb(7, 7, 202), rgb(74, 197, 74) )
+
+  
+       }
+      
+
+        </style>
+
+
+</head>
+ <div id="style" >
+<input type="text" placeholder="enter your name" repuird id ="neme"> <br />
+<input type="password" placeholder="enter your passwoard" required id="passwoard">
+</div> 
+<div class="mydiv1">
+
+
+
+
+
+</div>
+
+
+
+
+
+</html>

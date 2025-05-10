@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .stage {
+      background-color: burlywood;
+      height: 400px;
+      width: 90%;
+    }
+
+    .ball {
+      width: 100px;
+      border-radius: 50%;
+      height: 100px;
+      background-color: brown;
+      position: relative;
+      animation: pinkpong 1s ease-in-out 2s infinite alternate;
+    }
+    @keyframes pinkpong {
+      from {
+        left: 0;
+      }
+      to {
+        left: 500px;
+        background-color: rgb(58, 71, 44);
+      }
+    }
+    .stage2 {
+      background-color: aquamarine;
+      width: 90%;
+      height: 500px;
+      margin-top: 20px;
+    }
+    .ball2 {
+      width: 100px;
+      border-radius: 50%;
+      height: 100px;
+      background-color: brown;
+      position: relative;
+      animation: bounch 10s ease-in-out 2s infinite alternate;
+    }
+    @keyframes bounch {
+      0% {
+        left: 0;
+        top: 0;
+      }
+      25% {
+        left: 300px;
+        top: 300px;
+      }
+      50% {
+        top: 0px;
+        left: 600px;
+      }
+      75% {
+        left: 900px;
+        top: 300px;
+      }
+      100%{
+        left: 1200px;
+        top: 0px;
+      }
+    }
+  </style>
+  <body>
+    <div class="stage">
+      <div class="ball"></div>
+    </div>
+    <div class="stage2">
+      <div class="ball2"></div>
+    </div>
+  </body>
+</html>

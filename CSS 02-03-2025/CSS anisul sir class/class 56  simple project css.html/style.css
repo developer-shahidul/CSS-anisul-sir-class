@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Vollkorn, serif, Satisfy, cursive;
+  background-color: #63f74f;
+}
+
+.navbar {
+  padding: 1% 3%;
+  text-align: center;
+}
+.nab-logo {
+  text-align: left;
+}
+#logo {
+  height: 100px;
+  width: 100px;
+  box-shadow: 2px 2px 15px blue;
+}
+.navbar-heading {
+  text-transform: uppercase;
+
+  text-align: center;
+}
+#heading {
+  font-size: 2.5rem;
+  margin: 0;
+  background-color: #000000;
+  text-shadow: 2px 1px;
+  color: white;
+  text-align: center;
+}
+.navbar-menu {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.navbar-menu a {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(137, 192, 194);
+  border-radius: 5px;
+}
+.navbar-menu a:hover {
+  background-color: #adff2f;
+  box-shadow: 2px 2px 10px blue;
+}
+/* for MOBILE */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* both cleare */
+.navbar::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.about-me::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.profestional-experince::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* navbar end here */
+
+/* profile design start here */
+.profile {
+  text-align: center;
+  padding: 150px 10px;
+  position: relative;
+}
+.profile .top-weather-icon {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  right: 60px;
+  top: 20px;
+  margin-top: 15px;
+  transition: transform 2s;
+}
+.top-weather-icon:hover {
+  transform: rotate(360deg);
+}
+.profile-desc h1 {
+  margin-top: 50px;
+  font-family: Satisfy, cursive;
+  font-size: 3rem;
+}
+.profile-desc p {
+  color: rgb(179, 121, 14);
+  text-align: center;
+  width: 90%;
+  margin: 0 50px auto auto;
+}
+.bottom-weather-icon {
+  position: absolute;
+  height: 120px;
+  width: 150px;
+  left: 60px;
+  bottom: 10px;
+  transition: transform 2s;
+}
+.bottom-weather-icon:hover {
+  transform: rotate (360deg);
+}
+/* profile design end here */
+
+/* about Me start*/
+.about-me {
+  background-color: #63f74f;
+  color: #000000;
+  padding: 1% 3%;
+  text-align: center;
+
+  font-family: "Vollkorn, serif, Satisfy, cursive";
+}
+.about-me::after {
+  content: "";
+  float: left;
+  clear: both;
+}
+.about-me-image img {
+  height: 500px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.about-me-image img:hover {
+  box-shadow: 0 4px 8px 5px blue;
+}
+h2 {
+  color: #000000;
+  text-align: center;
+  font-size: 2rem;
+}
+.about-me-desc {
+  border: none;
+  overflow: hidden;
+  text-align: center;
+  padding: 1px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.about-me-desc:hover {
+  box-shadow: 0 4px 8px 5px blue;
+}
+.cv-button {
+  background-color: #000000;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+.dotted-hr {
+  border: dotted 5px white;
+  border-bottom: none;
+  margin: 5px auto;
+  width: 160px;
+}
+/* about Me end*/
+/*professional-experince */
+/* work education card  start*/
+.profestional-experince {
+  padding: 1% 3%;
+}
+.card:hover {
+  box-shadow: 0 4px 8px 5px blue;
+}
+.card {
+  max-width: 100%;
+  height: 700px;
+  overflow: hidden;
+  margin: 10px auto;
+  transition: 0.3s;
+}
+
+.card .card-icon #icon {
+  display: block;
+  text-align: center;
+  margin: 5px auto;
+  padding: 4px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+.card .card-title {
+  background-color: rgb(238, 37, 70);
+  text-align: center;
+  margin: 0px 10px;
+}
+.card .card-desc {
+  padding: 10px;
+  margin: 15px auto;
+}
+
+/* work education card  end*/
+/* skill card  start*/
+#skills-title {
+  margin: 0;
+  padding: 0;
+}
+.progress-bar {
+  font-style: italic;
+
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+
+  text-transform: uppercase;
+}
+.progress-bar li {
+  margin: 24px auto;
+  font-size: 20px;
+  list-style-type: none;
+  font-weight: bolder;
+  position: relative;
+  color: blue;
+}
+.progress-bar li::before {
+  content: "";
+  position: absolute;
+  top: calc(80% + 5px);
+  background-color: aliceblue;
+  width: 100%;
+  height: 25px;
+  left: 0;
+  border-radius: 100px;
+}
+.progress-bar li::after {
+  left: 0;
+  position: absolute;
+  top: calc(80% + 5px);
+  content: "";
+  height: 25px;
+  width: 0;
+  border-radius: 100px;
+  background-color: white;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.progress-bar li.html::after {
+  animation-name: progressbar;
+}
+@keyframes progressbar {
+  to {
+    background-color: rgb(11, 11, 199);
+    width: 90%;
+  }
+}
+
+.progress-bar li.css::after {
+  animation-name: progressba;
+}
+@keyframes progressba {
+  to {
+    background-color: rgb(138, 138, 180);
+    width: 80%;
+  }
+}
+.progress-bar li.boostap::after {
+  animation-name: rogressbar;
+}
+@keyframes rogressbar {
+  to {
+    background-color: rgb(70, 223, 151);
+    width: 70%;
+  }
+}
+.progress-bar li.javascript::after {
+  animation-name: progressbr;
+}
+@keyframes progressbr {
+  to {
+    background-color: rgb(221, 31, 110);
+    width: 60%;
+  }
+}
+.progress-bar li.jguery::after {
+  animation-name: progressar;
+}
+@keyframes progressar {
+  to {
+    background-color: rgb(231, 219, 42);
+    width: 40%;
+  }
+}
+.progress-bar li.node::after {
+  animation-name: progresbar;
+}
+@keyframes progresbar {
+  to {
+    background-color: rgb(34, 164, 197);
+    width: 100%;
+  }
+}
+.progress-bar li.experess::after {
+  animation-name: progrebar;
+}
+@keyframes progrebar {
+  to {
+    background-color: rgb(130, 224, 22);
+    width: 90%;
+  }
+}
+.progress-bar li.github::after {
+  animation-name: progrssbar;
+}
+@keyframes progrssbar {
+  to {
+    background-color: rgb(128, 29, 29);
+    width: 20%;
+  }
+}
+.progress-bar li.react::after {
+  animation-name: proressbar;
+}
+@keyframes proressbar {
+  to {
+    background-color: rgb(104, 27, 167);
+    width: 100%;
+  }
+}
+
+/* skill card  end*/
+/* achievment contact start */
+
+.achievement-contact {
+  color: #000000;
+  padding: 1% 3%;
+  text-align: center;
+}
+.achievment {
+  font-size: 20px;
+  padding: 20px;
+  text-align: left;
+}
+.achievment p {
+  margin: 20px auto;
+}
+
+.achievement-contact::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+/* contact me start */
+.contact input,
+textarea {
+  margin: 10px 10px;
+  width: 90%;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  background-color: #000000;
+  color: white;
+}
+.contact button {
+  border: none;
+  border-radius: 12px;
+  background-color: #000000;
+  color: white;
+  padding: 7px 50px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+/* contact me end */
+
+/* icon button */
+.icon-button {
+  padding: 20px;
+  text-align: center;
+}
+.btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  color: #3b5998;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px;
+}
+/* icon button  end*/
+/* achievment contact end */

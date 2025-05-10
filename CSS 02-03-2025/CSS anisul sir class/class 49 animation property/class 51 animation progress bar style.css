@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.skill-container {
+  background-color: aquamarine;
+  width: 500px;
+  padding: 20px;
+}
+.skill-container li {
+  list-style-type: none;
+  margin: 40px auto;
+  font-weight: bolder;
+  text-transform: uppercase;
+  position: relative;
+}
+.skill-container li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+
+  background-color: aliceblue;
+  width: 100%;
+  height: 25px;
+  left: 0;
+  border-radius: 100px;
+}
+.skill-container li::after {
+  width: 0;
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  background-color: rgb(184, 11, 236);
+
+  height: 25px;
+  left: 0;
+  border-radius: 100px;
+
+  animation-duration: 2s;
+  animation-delay: 2s;
+  /* animation-timing-function: ease-out; */
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: 2; */
+}
+.skill-container li.html::after {
+  animation-name: progress;
+}
+
+@keyframes progress {
+  to {
+    width: 90%;
+  }
+}
+.skill-container li.css::after {
+  animation-name: progres;
+}
+
+@keyframes progres {
+  to {
+    width: 40%;
+    background-color: blue;
+  }
+}
+
+.skill-container li.js::after {
+  animation-name: pogress;
+}
+
+@keyframes pogress {
+  to {
+    width: 70%;
+    background-color: red;
+  }
+}
+.skill-container li.boostap::after {
+  animation-name: progess;
+}
+
+@keyframes progess {
+  to {
+    width: 20%;
+    background-color: brown;
+  }
+}
+.skill-container li.paython::after {
+  animation-name: rogess;
+}
+
+@keyframes rogess {
+  to {
+    width: 100%;
+    background-color: green;
+  }
+}
+.skill-container li.java::after {
+  animation-name: proges;
+}
+
+@keyframes proges {
+  to {
+    width: 70%;
+    background-color: yellow;
+  }
+}

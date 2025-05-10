@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>calculatior making</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #display {
+        height: 60px;
+        width: 400px;
+        font-size: 30px;
+        text-align: right;
+        font-weight: bold;
+        text-align: right;
+        margin: 0 5px;
+        letter-spacing: 3px;
+        margin-left: 0px;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 400px;
+
+        text-align: center;
+        margin-top: 5px;
+        box-shadow: 0 4px 8px 0 rgba(76, 5, 241, 0.2);
+        transition: 0.2s;
+      }
+
+      .container:hover {
+        box-shadow: 0 16px 32px 0 rgb(0, 0, 0, 0.2);
+      }
+
+      .button {
+        margin-top: 5px;
+        font-size: 0px;
+      }
+
+      .btn {
+        width: 100px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #1f2326;
+        color: white;
+      }
+
+      .btn-color {
+        background-color: rgb(55, 0, 255);
+      }
+
+      .btn:hover {
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Calculator</h1>
+
+    <div class="container">
+      <div id="display">
+        <input type="text" maxlength="10" id="display" />
+      </div>
+      <div class="button">
+        <div>
+          <input type="button" class="btn" value="C" />
+          <input type="button" class="btn" value="+/" />
+          <input type="button" class="btn" value="%" />
+          <input type="button" class="btn btn-color" value="/" />
+        </div>
+
+        <div>
+          <input type="button" class="btn" value="7" />
+          <input type="button" class="btn" value="8" />
+          <input type="button" class="btn" value="9" />
+          <input type="button" class="btn btn-color" value="x" />
+        </div>
+
+        <div>
+          <input type="button" class="btn" value="4" />
+          <input type="button" class="btn" value="5" />
+          <input type="button" class="btn" value="6" />
+          <input type="button" class="btn btn-color" value="-" />
+        </div>
+        <div>
+          <input type="button" class="btn" value="1" />
+          <input type="button" class="btn" value="2" />
+          <input type="button" class="btn" value="3" />
+          <input type="button" class="btn btn-color" value="+" />
+        </div>
+        <div>
+          <input type="button" class="btn" value="0" />
+          <input type="button" class="btn" value="2" />
+          <input type="button" class="btn" value="." />
+
+          <input
+            type="button"
+            class="btn"
+            style="background-color: blueviolet"
+            value="="
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

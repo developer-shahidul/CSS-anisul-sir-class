@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trantion</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        border: 1px solid;
+
+        /* property name | duration | easing function | delay 
+        transition: width 2s ease-in-out 1s,
+          background-color 3s ease-in-out 1.5s;*/
+        transition: transform 2s 1s;
+      }
+      .box:hover {
+        transform: rotate(180deg) scale(1.5) translateX(-150px)
+          translateY(200px);
+        /*  
+        width: 500px;
+        background-color: chartreuse;*/
+      }
+      .feield {
+        border: 1px solid steelblue;
+      }
+      .feield:hover #bat {
+        transform: rotate(-50deg);
+        transform-origin: top right;
+      }
+      .feield:hover #ball {
+        transform: translate(900px, -900px);
+      }
+      #bat {
+        transition: transform 0.5s 0.1s;
+      }
+      #ball {
+        transition: transform 1s ease-out 0.5s;
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        left: 120px;
+        top: -5px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>transform: change the shape . this is a css style name</li>
+      <li>
+        translate: it id a value of the transform style rule .This means you
+        move either x or y or both axis.
+      </li>
+      <li>
+        transiton: How long it will take to do the change of the shape or color
+      </li>
+    </ul>
+    <div class="box">box 1</div>
+    <div class="box">box 2</div>
+    <div class="box">box 3</div>
+    <div class="feield">
+      <img
+        id="bat"
+        src=".//png-transparent-cricket-bats-gray-nicolls-batting-baseball-bats-graynicolls-cricket-gray-nicolls-batting.png"
+        alt=""
+      />
+      <img
+        id="ball"
+        src="./pngtree-cricket-ball-png-image_3971675.png"
+        alt=""
+      />
+    </div>
+    
+  </body>
+</html>
